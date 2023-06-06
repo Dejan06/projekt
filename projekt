@@ -1,0 +1,16 @@
+cijena_jabuka=2
+novac=10
+input_količina=input("Koliko jabuka želite kupiti?: ")
+broj_jabuka=int(input_količina)
+ukupna_cijena=cijena_jabuka*broj_jabuka
+print("Kupit ćete " + str(broj_jabuka) + " jabuke")
+print("Ukupna cijena je " + str(ukupna_cijena) + " eura")
+if novac>ukupna_cijena:
+    print("Kupili ste " + str(broj_jabuka) + " jabuke")
+    print("Preostalo Vam je " + str(novac- ukupna_cijena) + " eura" )
+elif novac==ukupna_cijena:
+    print("Kupili ste " + str(broj_jabuka) + " jabuka")
+    print("Vaš novčanik je prazan")
+else:
+    print("Nemate dovoljno novaca")
+    print("Ne možete kupiti toliko jabuka")
